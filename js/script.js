@@ -1,4 +1,4 @@
-const btn = document.getElementById("sendEmail");
+/* const btn = document.getElementById("sendEmail");
 
 document.getElementById("formContact").addEventListener("submit", function(event) {
   event.preventDefault();
@@ -27,4 +27,24 @@ document.getElementById("formContact").addEventListener("submit", function(event
   document.getElementById("email").value ="";
  // document.getElementById("asunto").value ="";
   document.getElementById("message").value ="";
+});
+
+*/
+document.addEventListener("scroll", function () {
+  const menu = document.getElementById("menu");
+  const services = document.getElementById("services");
+
+  // Obtener las posiciones de ambos elementos
+  const menuRect = menu.getBoundingClientRect();
+  const servicesRect = services.getBoundingClientRect();
+
+  if (servicesRect.top <= menuRect.bottom) {
+      // Cuando la sección toca el menú, sube
+      menu.style.transform = `translateY(-100%)`;
+      menu.style.transition = "transform 0.5s ease";
+  } else if (servicesRect.top > menuRect.bottom) {
+      // Cuando la sección se aleja, el menú baja
+      menu.style.transform = `translateY(0)`;
+      menu.style.transition = "transform 0.5s ease";
+  }
 });

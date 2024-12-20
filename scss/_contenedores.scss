@@ -1,0 +1,348 @@
+@use '_variables' as *;
+@use '_mixing' as *;
+
+//MENU
+.container__menu{
+    @include containers(100%,122px,flex,0px,30px 40px,space-between, flex-start);
+    background: rgba(0, 0, 0, 0.40);
+    background: color(display-p3 0 0 0 / 0.40);
+    position: fixed;  
+    
+}
+.container__menu--bar{
+    flex-direction: row-reverse;
+    padding: 20px;
+    z-index: 1;
+}
+
+.container__menu--items{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    gap: 40px;
+}
+.container__menu--item{
+    @include text('Open Sans',16px,$colorTextB);
+}
+
+//--------------------------------------------------------
+
+.btn__AC{
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    border: 1px solid color(display-p3 1 1 1);
+    background: $color1;
+    background: color(display-p3 0.9765 0.8118 0);
+    @include text('Open Sans',25px,$color2);
+    text-decoration: none;
+    &:hover {
+        background-color: $color2;
+        @include text('Open Sans',25px,$color1);
+    }
+}
+.title{
+    @include text('Source Serif Pro',70px,$colorTextB);
+    text-align: center;
+    text-transform: uppercase;
+}
+.title--h1{
+    @include text('Open Sans',45px,$colorTextB);
+    text-align: center;
+    text-transform: uppercase;
+}
+.title--h2{
+    @include text('Open Sans',40px,$colorTextB);
+    text-align: center;
+}
+.title--color2{
+    color: $color2 !important
+}
+.title--colorAlt{
+    color: $colorTextAlt !important
+}
+.title--h3{
+    @include text('Open Sans',39px,$colorTextN);
+}
+.title--alt{
+    @include text('Source Serif Pro',60px,$colorTextB);
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+}
+//---------------------------------------------------------------------
+
+//HOME 
+.container__home{
+    @include containers(100%,112vh,flex,40px,30px 40px,center,center,column);
+  text-align: center;
+}
+.opacidad--home{
+    @include opacidad(absolute, -1);
+    height: 106vh !important;
+}
+.video-background{
+    position: relative;
+  width: 100%;
+  height: 112vh;
+  overflow: hidden;
+  video {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 100% del ancho de la ventana */
+    height: 106vh; /* 100% de la altura de la ventana */
+    object-fit: fill; 
+    zoom: 0%;
+  }
+}
+.svg--home{
+    position: absolute;
+    top: 55%;
+}
+//-------------------------------------------------------------------
+
+//SERVICES
+.container__services{
+    @include containers(100%,100vh,flex,40px,30px 40px,center,center,column);
+}
+
+.container__cards--services{
+    @include containers(100%,100vh,flex,40px,30px 40px,center,center,row);
+}
+.card__services{
+    @include containers(370px,404px,flex,0px,0px,flex-end,center,column);
+    border-radius: 10px;
+    box-shadow: 0px 4px 14px 0px rgba(2, 12, 67, 0.30);
+    box-shadow: 0px 4px 14px 0px color(display-p3 0.0161 0.0446 0.25 / 0.30);
+    img{
+        border-radius: 10px;
+        position: absolute;
+        width: 370px;
+        height: 404px;
+        z-index: -1;
+    }
+    &:hover {  
+        .card__services--texts {
+          background-color: $color1; 
+          height: 360px;
+          //transform: translateY(-20%);
+          transition: height 0.3s ease;
+          h3{
+            color: $color2 !important;
+          }
+          p {
+            display: inline;
+            opacity: 1; // Hace visible el texto adicional
+            @include text('Open Sans',20px,$color2);
+          }
+        }
+    }
+    
+}
+.card__services--texts{
+    @include containers(100%,200px,flex,20px,20px,center,center,column);
+    z-index: 10;
+    border-radius: 20px 20px 10px 10px;
+    background: $color2;
+    background: color(display-p3 0.0161 0.0446 0.25);
+    transition: background-color $transition-speed ease;
+    h3{
+        @include text('Open Sans',29px,$colorTextB);
+    }
+    p{
+        opacity: 0;
+        display: none;
+    }
+}
+.svg--services{
+   // position: absolute;
+    top: 55%;
+}
+//---------------------------------------
+
+//WHY CHOOSE US 
+.container__whyChooseUs{
+    @include containers(100%,100vh,flex,40px,30px 40px,center,center,column);
+    background-color: $color1
+}
+.container__cards--whyChooseUs{
+    @include containers(100%,100vh,flex,40px,30px 40px,center,center,row);
+}
+.card__whyChooseUs{
+    @include containers(400px,394px,flex,0px,40px,space-around,center,column);
+    border-radius: 22.249px;
+    background: $color2;
+    background: color(display-p3 0.0161 0.0446 0.25);
+    box-shadow: 0px 4.45px 50px 0px rgba(139, 110, 0, 0.50);
+    box-shadow: 0px 4.45px 50px 0px color(display-p3 0.5263 0.4375 0 / 0.50);
+    svg{
+        width: 80px;
+    }
+}
+.card__whyChooseUs--texts{
+    gap: 5px;
+    h4{
+        @include text('Open Sans',30px,$colorTextB,normal,700);
+    }
+    p{
+        @include text('Open Sans',20px,$colorTextB);
+    }
+}
+
+//----------------------------------------------------------
+
+
+// TESTIMONIALS
+.container__testimonials{
+    @include containers(100%,80vh,flex,40px,30px 40px);
+    flex-direction: column;
+}
+.carouserl__testimonials--texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container__testimonials--carousel{
+    text-align: center;
+}
+.carousel__testimonials--msg{
+    @include text('Open Sans',39px,$colorTextN);
+    width: 80%;
+}
+
+.container__testimonials--TransformYourSpace{
+    @include containers(100%,100vh,flex,40px,30px 40px,center,flex-end,column);
+    @include container_img('../img/TransformYourSpace.webp');  
+
+}
+
+//----------------------------------------------
+
+//CONTACT US
+.container__contacUs{
+    @include containers(100%,100vh,flex,40px,30px 40px,center,center);
+    background: $color2;
+    background: color(display-p3 0.0161 0.0446 0.25);
+}
+.contactUs__form{
+    width: 50%;
+    margin: 40px;
+    padding: 20px;
+    h2{
+        width: 100% !important;
+    }
+}
+
+.form-container{
+    padding: 20px 20px 40px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50px 50px 0px 0px;
+    border: 1px solid $colorTextB;
+    border: 1px solid color(display-p3 1 1 1);
+    background: rgba(255, 255, 255, 0.10);
+    background: color(display-p3 1 1 1 / 0.10);  
+}
+.form-footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0px 0px 50px 50px;
+    border: 1px solid #FFF;
+    border: 1px solid color(display-p3 1 1 1);
+    background: rgba(255, 255, 255, 0.50);
+    background: color(display-p3 1 1 1 / 0.50);
+}
+.form-label {
+    color: #ddd;
+  }
+.form-control, .form-select {
+background-color: #444;
+color: $colorTextB;
+border: none;
+border-radius: 5px;
+}
+
+.btn-submit {
+    display: flex;
+    padding: 10px 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    border: 1px solid color(display-p3 1 1 1);
+    background: $color1;
+    background: color(display-p3 0.9765 0.8118 0);
+
+@include text('Open Sans',20px,$colorTextN);
+}
+
+//---------------------------------------------------------
+.container__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color2;
+    padding: 10px;
+  
+    text-align: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+.container__footer--img{
+    width: 240.602px;
+}
+.container__footer--socialMedia{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  gap: 21px;
+}
+.socialMedia{
+    @include text('Open Sans',20px,$colorTextB);
+    text-align: center;
+    display: flex;
+      gap: 15px;
+      align-items: center;
+      text-decoration: none;
+    h4{
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      margin: 0px;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+    }
+    &:hover {
+      color: $colorTextN;
+      text-decoration: none;
+      svg{
+        fill: $colorTextN;
+      }
+  
+    }
+}
+.container__footer--p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    @include text(Open Sans,20px,$color1);
+    p{
+      margin: 0px;
+    }
+}
