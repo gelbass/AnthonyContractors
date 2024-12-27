@@ -92,7 +92,7 @@
 .video-background{
     position: relative;
   width: 100%;
-  height: 112vh;
+  height: 100vh;
   overflow: hidden;
   video {
     z-index: -2;
@@ -100,7 +100,7 @@
     top: 0;
     left: 0;
     width: 100%; /* 100% del ancho de la ventana */
-    height: 106vh; /* 100% de la altura de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
     object-fit: fill; 
     zoom: 0%;
   }
@@ -110,6 +110,7 @@
 //SERVICES
 .container__services{
     @include containers(100%,100vh,flex,40px,30px 40px,center,center,column);
+    margin-top: 20px
 }
 
 .container__cards--services{
