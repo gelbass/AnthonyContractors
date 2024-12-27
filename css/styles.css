@@ -803,7 +803,7 @@ html {
     height: 400px;
   }
   .card__services:hover .card__services--texts {
-    height: 200px;
+    height: 300px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1366px) {
@@ -816,7 +816,7 @@ html {
     height: 400px;
   }
   .card__services:hover .card__services--texts {
-    height: 200px;
+    height: 300px;
   }
 }
 

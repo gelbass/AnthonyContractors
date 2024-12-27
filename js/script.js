@@ -38,7 +38,7 @@ document.addEventListener("scroll", function () {
   const menuRect = menu.getBoundingClientRect();
   const servicesRect = services.getBoundingClientRect();
 
-  if (servicesRect.top <= menuRect.bottom) {
+  if ((servicesRect.top - 50) <= menuRect.bottom) {
       // Cuando la sección toca el menú, sube
       menu.style.transform = `translateY(-100%)`;
       menu.style.transition = "transform 0.5s ease";
