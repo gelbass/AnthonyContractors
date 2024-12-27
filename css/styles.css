@@ -188,11 +188,6 @@
   zoom: 0%;
 }
 
-.svg--home {
-  position: absolute;
-  bottom: -10%;
-}
-
 .container__services {
   width: 100%;
   height: 100vh;
@@ -594,6 +589,11 @@ html {
   height: 183px;
   display: flex;
   align-items: flex-start;
+}
+
+#home .svg--home {
+  position: absolute;
+  bottom: -10%;
 }
 
 @media (min-width: 0px) and (max-width: 319px) {

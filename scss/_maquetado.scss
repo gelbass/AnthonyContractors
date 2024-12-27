@@ -19,4 +19,8 @@ html {
 }
 #home{
     //height: 120vh;
+    .svg--home{
+        position: absolute;
+        bottom: -10%;
+    }
 }
