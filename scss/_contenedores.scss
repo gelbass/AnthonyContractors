@@ -22,6 +22,9 @@
 }
 .container__menu--item{
     @include text('Open Sans',16px,$colorTextB);
+    &:hover {
+        @include text('Open Sans',16px,$color1);
+    }
 }
 
 //--------------------------------------------------------
@@ -43,6 +46,8 @@
         background-color: $color2;
         @include text('Open Sans',25px,$color1);
     }
+    z-index: 100;
+    
 }
 .title{
     @include text('Source Serif Pro',70px,$colorTextB);
@@ -102,7 +107,7 @@
 }
 .svg--home{
     position: absolute;
-    top: 55%;
+    bottom: -10%;
 }
 //-------------------------------------------------------------------
 
@@ -208,6 +213,13 @@
     align-items: center;
     text-align: center;
 }
+.container__starts{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.carousel--starts{
+}
 .container__testimonials--carousel{
     text-align: center;
 }
@@ -281,6 +293,10 @@ border-radius: 5px;
     border: 1px solid color(display-p3 1 1 1);
     background: $color1;
     background: color(display-p3 0.9765 0.8118 0);
+    &:hover {
+        background-color: $color2;
+        @include text('Open Sans',20px,$color1);
+    }
 
 @include text('Open Sans',20px,$colorTextN);
 }
