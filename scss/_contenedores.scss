@@ -165,8 +165,7 @@
     }
 }
 .svg--services{
-   // position: absolute;
-    top: 55%;
+   margin-bottom: -10px
 }
 //---------------------------------------
 
@@ -198,7 +197,9 @@
         @include text('Open Sans',20px,$colorTextB);
     }
 }
-
+.svg--whyChooseUs{
+    margin-top: -10px
+}
 //----------------------------------------------------------
 
 
