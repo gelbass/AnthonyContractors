@@ -50,7 +50,7 @@
     
 }
 .title{
-    @include text('Source Serif Pro',70px,$colorTextB);
+    @include text(Source Serif Pro,70px,$colorTextB);
     text-align: center;
     text-transform: uppercase;
 }
@@ -73,7 +73,7 @@
     @include text('Open Sans',39px,$colorTextN);
 }
 .title--alt{
-    @include text('Source Serif Pro',60px,$colorTextB);
+    @include text(Source Serif Pro,60px,$colorTextB);
     text-align: center;
     text-transform: uppercase;
     width: 50%;
@@ -82,7 +82,7 @@
 
 //HOME 
 .container__home{
-    @include containers(100%,112vh,flex,40px,30px 40px,center,center,column);
+    @include containers(100%,100vh,flex,40px,30px 40px,center,center,column);
   text-align: center;
 }
 .opacidad--home{
