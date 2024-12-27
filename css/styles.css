@@ -168,7 +168,7 @@
   object-fit: cover; /* Ajusta el SVG para cubrir todo el espacio sin deformarse */
   object-position: center; /* Centra el SVG dentro de la ventana */
   z-index: -1;
-  height: 106vh !important;
+  height: 100vh !important;
 }
 
 .video-background {
@@ -596,7 +596,7 @@ html {
 
 #home .svg--home {
   position: absolute;
-  bottom: -1%;
+  bottom: 0%;
 }
 
 @media (min-width: 0px) and (max-width: 319px) {
