@@ -82,7 +82,7 @@
 
 //HOME 
 .container__home{
-    @include containers(100%,100dvh,flex,40px,30px 40px,center,center,column);
+    @include containers(100%,100%,flex,40px,30px 40px,center,center,column);
   text-align: center;
 }
 .opacidad--home{
