@@ -31,7 +31,7 @@ document.getElementById("formContact").addEventListener("submit", function(event
 
 */
 document.addEventListener("scroll", function () {
-  const menu = document.getElementById("header");
+  const menu = document.getElementById("menu");
   const services = document.getElementById("services");
 
   // Obtener las posiciones de ambos elementos
