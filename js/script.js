@@ -40,10 +40,12 @@ document.addEventListener("scroll", function () {
 
   if ((servicesRect.top) <= menuRect.bottom) {
       // Cuando la sección toca el menú, sube
-      menu.style.transform = `translateY(-100%)`;
+      menu.style.opacity = 1;
+      //menu.style.transform = `translateY(-100%)`;
       menu.style.transition = "transform 0.5s ease";
   } else if (servicesRect.top > menuRect.bottom) {
       // Cuando la sección se aleja, el menú baja
+      menu.style.opacity = 0;
       menu.style.transform = `translateY(0)`;
       menu.style.transition = "transform 0.5s ease";
   }
