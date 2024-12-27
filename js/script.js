@@ -46,7 +46,7 @@ document.addEventListener("scroll", function () {
   } else if (servicesRect.top > menuRect.bottom) {
       // Cuando la sección se aleja, el menú baja
       menu.style.opacity = 0;
-      menu.style.transform = `translateY(0)`;
+      //menu.style.transform = `translateY(0)`;
       menu.style.transition = "transform 0.5s ease";
   }
 });
