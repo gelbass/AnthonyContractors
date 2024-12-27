@@ -595,7 +595,7 @@ html {
 
 #home .svg--home {
   position: absolute;
-  bottom: -10%;
+  bottom: -7%;
 }
 
 @media (min-width: 0px) and (max-width: 319px) {
