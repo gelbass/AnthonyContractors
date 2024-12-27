@@ -82,7 +82,7 @@
 
 //HOME 
 .container__home{
-    @include containers(100%,100vh,flex,40px,30px 40px,center,center,column);
+    @include containers(100%,100dvh,flex,40px,30px 40px,center,center,column);
   text-align: center;
 }
 .opacidad--home{
@@ -92,7 +92,7 @@
 .video-background{
     position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   video {
     z-index: -2;
@@ -100,7 +100,7 @@
     top: 0;
     left: 0;
     width: 100%; /* 100% del ancho de la ventana */
-    height: 100vh; /* 100% de la altura de la ventana */
+    height: 100dvh; /* 100% de la altura de la ventana */
     object-fit: fill; 
     zoom: 0%;
   }

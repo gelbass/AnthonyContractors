@@ -151,7 +151,7 @@
 
 .container__home {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   gap: 40px;
   padding: 30px 40px !important;
   display: flex !important;
@@ -174,7 +174,7 @@
 .video-background {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 .video-background video {
@@ -183,7 +183,7 @@
   top: 0;
   left: 0;
   width: 100%; /* 100% del ancho de la ventana */
-  height: 100vh; /* 100% de la altura de la ventana */
+  height: 100dvh; /* 100% de la altura de la ventana */
   object-fit: fill;
   zoom: 0%;
 }
@@ -596,7 +596,7 @@ html {
 
 #home .svg--home {
   position: absolute;
-  bottom: 0%;
+  bottom: -1%;
 }
 
 @media (min-width: 0px) and (max-width: 319px) {
