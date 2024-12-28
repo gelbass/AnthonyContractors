@@ -50,3 +50,9 @@ document.addEventListener("scroll", function () {
       menu.style.transition = "transform 0.5s ease";
   }
 });
+
+window.addEventListener('resize', () => {
+  const homeSection = document.querySelector('#home');
+  const svgHome = document.querySelector('.svg--home');
+  svgHome.style.top = `${homeSection.offsetHeight - svgHome.offsetHeight}px`;
+});
