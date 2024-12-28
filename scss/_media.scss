@@ -124,9 +124,9 @@ main{
 //HOME
 
 .svg--home{
-    @include respond-between("phone-small","laptop-medium"){
-        bottom: -7%;
-    } 
+   /*  @include respond-between("phone-small","tablet-large"){
+        display: none;
+    }  */
 }
 //--------------------------
 

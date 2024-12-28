@@ -596,7 +596,7 @@ html {
 
 #home .svg--home {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
 }
 
 @media (min-width: 0px) and (max-width: 319px) {
@@ -752,10 +752,10 @@ html {
   }
 }
 
-@media (min-width: 319px) and (max-width: 1366px) {
-  .svg--home {
-    bottom: -7%;
-  }
+.svg--home {
+  /*  @include respond-between("phone-small","tablet-large"){
+       display: none;
+   }  */
 }
 
 @media (min-width: 319px) and (max-width: 991px) {
