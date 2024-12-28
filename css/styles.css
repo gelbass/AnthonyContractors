@@ -594,6 +594,9 @@ html {
   align-items: flex-start;
 }
 
+#home {
+  position: relative;
+}
 #home .svg--home {
   position: absolute;
   bottom: -1px;
