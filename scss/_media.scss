@@ -123,11 +123,7 @@ main{
 //------------
 //HOME
 
-.svg--home{
-   /*  @include respond-between("phone-small","tablet-large"){
-        display: none;
-    }  */
-}
+
 //--------------------------
 
 //SERVICES
@@ -367,9 +363,10 @@ main{
 
 //FOOTER
 .container__footer--socialMedia{
-    @include respond-between("phone-small","tablet-medium"){
+    @include respond-between("phone-small","laptop-small"){
         flex-direction: column !important;
       }  
+ 
 }
 .socialMedia{
 
@@ -378,6 +375,7 @@ main{
            font-size: 15px; 
         }
       } 
+      
 }
 .container__footer--p{
     @include respond-between("phone-small","tablet-medium"){

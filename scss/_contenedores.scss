@@ -350,6 +350,11 @@ border-radius: 5px;
   
     }
 }
+.socialMedia--tlf{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
 .container__footer--p{
     display: flex;
     flex-direction: column;
