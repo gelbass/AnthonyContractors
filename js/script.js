@@ -1,10 +1,10 @@
-/* const btn = document.getElementById("sendEmail");
+const btn = document.getElementById("sendEmail");
 
 document.getElementById("formContact").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  const serviceID = "service_0k4vjla"; //Remplazar 
-  const templateID = "template_5sj22co"; //Remplazar 
+  const serviceID = "service_nn4mr6c"; //Remplazar 
+  const templateID = "template_h85zjtp"; //Remplazar 
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
@@ -22,14 +22,14 @@ document.getElementById("formContact").addEventListener("submit", function(event
       )
     }
   );
-  document.getElementById("name").value ="";
-  document.getElementById("lastName").value ="";
+  document.getElementById("firstName").value ="";
   document.getElementById("email").value ="";
- // document.getElementById("asunto").value ="";
-  document.getElementById("message").value ="";
+  document.getElementById("address").value ="";
+  document.getElementById("service").value ="";
+  document.getElementById("comments").value ="";
 });
 
-*/
+
 document.addEventListener("scroll", function () {
   const menu = document.getElementById("menu");
   const services = document.getElementById("services");
