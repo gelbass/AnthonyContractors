@@ -3,8 +3,8 @@ const btn = document.getElementById("sendEmail");
 document.getElementById("formContact").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  const serviceID = "service_nn4mr6c"; //Remplazar 
-  const templateID = "template_h85zjtp"; //Remplazar 
+  const serviceID = "service_tw00ulk"; //Remplazar 
+  const templateID = "template_vxpo0ps"; //Remplazar 
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
